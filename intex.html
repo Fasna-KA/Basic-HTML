@@ -4,20 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backtracking</title>
+    <title>Backtracking P1</title>
 </head>
 <body>
   
-    <!-- <font size="6">Backtracking<br></font>
-    <font>Copyright ©2002 by David Matuszek</font>
-       style is not same -->
-
-   <!-- <h1>Backtracking</h1>
-   <p>Copyright ©2002 by David Matuszek</p>
-      it have space -->
-
-      <!-- size =+3 means(3+3) -->
-
 <header>
      <font size="+3"><b>Backtracking</b></font> <br>
         Copyright ©2002 by David Matuszek
@@ -68,29 +58,8 @@
         we have. (If we do have an actual tree data structure, backtracking on it is 
         called <i>depth-first tree searching.</i>)</p>
       
-        <!-- <p><b><font size="+1"><br>
-         The backtracking algorithm.</font></b>
-        </p> -->
         <h3>The backtracking algorithm.</h3>
         <p>Here is the algorithm (in pseudocode) for doing backtracking from a given node n:</p>
-
-        <!-- <pre color="brown" size="+3">boolean solve(Node n) {
-            if n is a leaf node {
-                if the leaf is a goal node, return true
-                else return false
-            } else {
-                for each child c of n {
-                    if solve(c) succeeds, return true
-                }
-                return false
-            }
-        }</pre>
-        color,size not applicable in pre  (only in font)
-        -->
-
-        <!-- <blockquote>
-
-        </blockquote> -->
 
      <font size="+1" color="brown">
         <pre> boolean solve(Node n) {
@@ -119,13 +88,7 @@
             <li>If any child of<code> n </code>is solvable, then<code> n </code>is solvable.</li>
             <li>If no child of<code> n </code>is solvable, then<code> n </code>is not solvable.</li>
         </ul>
-
-        <!-- <pre>code</pre>
-          [is <pre> and <code> are same ,---NO
-         in pre it appears as same 
-         in code it type as stndard form -->
-
-         <p>Hence, to decide whether any non-leaf node<code> n </code>is solvable (part 
+        <p>Hence, to decide whether any non-leaf node<code> n </code>is solvable (part 
             of a path to a goal node), all you have to do is test whether any child of<code> 
             n </code>is solvable. This is done recursively, on each child of<code> n</code>. 
             In the above code, this is done by the lines</p>
@@ -160,7 +123,7 @@
             </li>
             </ol>
     </ul>
-   <!-- <div> , <dd>? -->
+ 
 </header>
 
     <h3>Non-recursive backtracking, using a stack</h3> 
@@ -440,12 +403,6 @@
         BLUE=4</code>. We define the following helper methods. The helper method code 
         isn't displayed here because it's not important for understanding the method 
         that does the backtracking.</p>  
-
-<!-- <font size="+1" color="brown"> <pre>
-boolean mapIsOK() </pre> </font>
- <dd> Used by method 1 to check (at a leaf node) 
-    whether the entire map is colored correctly.</dd>
-its giving space -->
  
     <dl> 
         <dt> <font size="+1" color="brown"><code>boolean mapIsOK()</code></dt></font>
@@ -576,7 +533,7 @@ its giving space -->
         return <b>no(node);</b>
     } </pre></font>
     <p>And we get these results:</p>
-<font size="+1" color="black"> <pre> <b>
+<font size="+2" color="black"> <pre> <b>
     Entering solvable(Root)
     |  Entering solvable(A)
     |  |  Entering solvable(C)
@@ -901,17 +858,6 @@ Here is some output from the program:
         the actual output in order to emphasize this point. Backtracking always produces 
         its results (sequence of choices) in reverse order; it is up to you, the programmer, 
         to reverse the results again to get them in the correct order.</p>
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
